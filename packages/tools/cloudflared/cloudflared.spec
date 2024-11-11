@@ -1,8 +1,9 @@
 # disable debuginfo subpackage
 %global debug_package %{nil}
 
-Name: cloudflared
+Name:    cloudflared
 Version: 2024.11.0
+Release: 1%{?dist}
 Summary: Cloudflare Tunnel client (formerly Argo Tunnel)
 License: Apache-2.0
 URL:     https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/
@@ -32,4 +33,5 @@ make install \
 %{_bindir}/%{name}
 %{_mandir}/%{name}.1
 
+%changelog
 %autochangelog
